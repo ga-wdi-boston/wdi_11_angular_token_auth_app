@@ -1,0 +1,7 @@
+section {
+  @extend .container;
+
+  article {
+    @extend .grid_8;
+  }
+}

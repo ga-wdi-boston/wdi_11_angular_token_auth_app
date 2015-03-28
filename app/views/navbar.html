@@ -1,0 +1,9 @@
+<nav>
+  <ul>
+    <li class="brand"><a href="#/">AuthApp</a></li>
+    <li ng-if="!navbarController.isLoggedin()"><a ng-href="#/login">Login</a></li>
+    <li ng-if="navbarController.isLoggedin()"><a href="javascript:void(0)" ng-click="navbarController.logout()">Logout</a></li>
+    <li ng-if="navbarController.isLoggedin()"><a href="javascript:void(0)">Comments</a></li>
+    <li ng-if="navbarController.isLoggedin()"><a ng-href="#/posts">Posts</a></li>
+  </ul>
+</nav>
